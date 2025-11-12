@@ -1,0 +1,199 @@
+/* ================================================= */
+/* 1. Estilos Base y Tipografía Mejorada */
+/* ================================================= */
+
+body {
+    /* Usando una fuente moderna (Sans-Serif por defecto) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #e9ecef; /* Fondo gris claro suave */
+    display: flex;
+    flex-direction: column; /* Cambiamos a columna para centrar mejor el resultado */
+    justify-content: center;
+    align-items: center; /* Centra el contenido horizontalmente y verticalmente */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ================================================= */
+/* 2. Estilos del Contenedor del Formulario (Tarjeta) */
+/* ================================================= */
+
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px; /* Bordes más redondeados */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada pero suave */
+    width: 100%;
+    max-width: 450px; /* Un poco más ancho */
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Más espacio entre los campos */
+    border: 1px solid #dee2e6; /* Borde sutil */
+}
+
+/* ================================================= */
+/* 3. Estilos de los Inputs y Labels */
+/* ================================================= */
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600; /* Un poco más de peso a la fuente del label */
+    color: #495057; /* Texto del label en gris oscuro */
+    font-size: 1rem;
+}
+
+input[type="text"] {
+    padding: 14px 10px; /* Más padding vertical */
+    border: 2px solid #ced4da; /* Borde más visible */
+    border-radius: 8px;
+    margin-top: 8px;
+    font-size: 17px;
+    color: #343a40;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Mantenemos un acento azul moderno */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Un brillo suave al enfocar */
+    outline: none;
+}
+
+/* ================================================= */
+/* 4. Estilos del Botón de Sumar */
+/* ================================================= */
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px; /* Espaciado sutil para el texto del botón */
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98); /* Pequeño efecto de "pulsación" */
+}
+
+/* ================================================= */
+/* 5. Estilos del Resultado */
+/* ================================================= */
+
+p {
+    text-align: center;
+    font-size: 22px; /* Resultado más grande */
+    font-weight: 700;
+    color: #155724; /* Color verde oscuro elegante */
+    margin-top: 30px;
+    padding: 15px 25px;
+    background-color: #d4edda; /* Fondo verde claro */
+    border-radius: 10px;
+    border: 1px solid #c3e6cb;
+    width: 100%;
+    max-width: 450px;
+}
+
+/* ================================================= */
+/* 6. Estilos para la Tabla de Multiplicar (Lista) */
+/* ================================================= */
+
+body > ul {
+    /* Selecciona el UL que es hijo directo del BODY */
+    list-style: none; /* Elimina las viñetas por defecto */
+    padding: 0;
+    margin-top: 30px; /* Espacio para separarlo del formulario */
+    width: 100%;
+    max-width: 450px; /* Mismo ancho que el formulario para alineación */
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para destacarlo */
+    border: 1px solid #ced4da; /* Borde sutil */
+}
+
+body > ul li {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #343a40; /* Texto legible */
+    border-bottom: 1px solid #f0f0f0; /* Separador entre filas */
+    transition: background-color 0.2s;
+}
+
+body > ul li:last-child {
+    border-bottom: none; /* Elimina el separador de la última línea */
+    /* Asegura que el borde inferior del UL sea visible */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+body > ul li:nth-child(even) {
+    background-color: #f8f9fa; /* Alternar color de fondo para efecto cebra  */
+}
+
+body > ul li:hover {
+    background-color: #e2f0e3; /* Un ligero cambio de color al pasar el ratón */
+}
+
+/* ================================================= */
+/* 7. Estilos para Encabezados (H1 y H2) */
+/* ================================================= */
+
+h1 {
+    font-size: 2.5rem; /* Un tamaño grande para el título principal */
+    color: #343a40; /* Color oscuro para contraste */
+    margin-bottom: 0.5rem; /* Espacio mínimo debajo del H1 */
+    font-weight: 700; /* Fuente negrita */
+    text-align: center; /* Centrar el título */
+    width: 100%;
+    max-width: 450px; /* Asegurar que no sea más ancho que el formulario */
+}
+
+h2 {
+    font-size: 1.5rem; /* Un tamaño secundario claro */
+    color: #495057; /* Un gris oscuro, menos prominente que el H1 */
+    margin-top: 0; 
+    margin-bottom: 30px; /* Espacio considerable para separarlo del formulario */
+    font-weight: 500; /* Fuente seminegrita o normal */
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Ajuste al body: 
+   Dado que ahora el body contiene H1, H2, y el formulario, 
+   necesitamos ajustar cómo los centra Flexbox para que se apilen correctamente. */
+body {
+    /* (Asegúrate de que estas propiedades ya están en tu CSS, si no, añádelas) */
+    display: flex;
+    flex-direction: column; /* Apila H1, H2, Formulario y Resultado verticalmente */
+    justify-content: flex-start; /* Puedes cambiar a 'center' si quieres centrado vertical */
+    align-items: center; /* Centra los elementos horizontalmente */
+    min-height: 100vh;
+    padding: 30px 20px; /* Añadir padding general en lugar de margin-top */
+}
+
+/* ================================================= */
+/* 8. Estilos para Mensajes de Error (Validación) */
+/* ================================================= */
+
+label span {
+    color: #D8000C; /* Un color rojo oscuro, fácil de leer */
+    font-size: 0.9rem; /* Un poco más pequeño que el texto principal */
+    font-weight: bold; /* Lo hacemos negrita para que destaque */
+    display: block; /* Hacemos que ocupe su propia línea */
+    margin-top: 5px; /* Le da un pequeño espacio de separación del input */
+    padding: 5px;
+    background-color: #FFD2D2; /* Un fondo rojo muy pálido */
+    border-radius: 4px; /* Esquinas redondeadas suaves */
+}
